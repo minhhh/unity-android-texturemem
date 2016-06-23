@@ -1,0 +1,2 @@
+include ':SubProjects:AndroidMemTest'
+include ':SubProjects:AndroidMem'
