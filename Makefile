@@ -18,11 +18,11 @@ logmem: # log android memory
 andstart: # show log for android
 	adb shell am start -n com.android.utils.androidmemtest/.MainActivity
 
-installdebug: # build
+build-dev: # build
 	./gradlew installDebug
 
 buildandrun: # build and run
-	make installdebug && make andstart
+	make build-dev && make andstart
 
 unzip: # unzip the jar file
 	uncomp SubProjects/AndroidMem/build/outputs/aar/AndroidMem-release.aar -d t -t .zip
